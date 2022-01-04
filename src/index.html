@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>2012</title>
+<style>
+* { margin : 0
+  ; padding : 0
+  ; color : #b0b0b0
+  ; text-decoration : none
+  ; word-break : break-all
+  ; font : normal normal 20pt / 1.5rem
+           'PT Sans', sans-serif
+  }
+
+body
+  { min-height : 100vh
+  ; background-image
+  : repeating-linear-gradient( 45deg
+      , #b0b0b0
+      , #b0b0b0 0.75pt
+      , transparent 1pt
+      , transparent 1rem
+      )
+  , repeating-linear-gradient( 135deg
+      , #b0b0b0
+      , #b0b0b0 0.75pt
+      , transparent 1pt
+      , transparent 1rem
+      )
+  }
+
+main
+  { padding : 1rem
+  ; display : grid
+  ; grid-gap : 1rem
+  ; grid : auto auto
+         / 13em 1fr 13em
+  }
+main > *
+  { background : white }
+
+
+a:link
+  { color : #2ccbcc }
+a:active
+, a:hover
+, a:focus
+, a.current
+  { color : white
+  ; background : #2ccbcc
+  }
+
+
+article
+, nav
+, header
+, aside
+  { border : 1rem solid #2ccbcc
+  ; padding : 1rem
+  ; display : flex
+  ; flex-direction : column
+  }
+
+nav
+  { flex-direction : row }
+
+nav a
+  { flex : 1 }
+nav a:not( :last-child )
+  { margin-right : 1rem }
+
+a
+, h1
+, li
+  { border : 1pt solid #2ccbcc
+  ; padding : 0 0.25rem
+  ; list-style : none
+  }
+h1
+, li
+  { border-color : #b0b0b0 }
+
+aside a:not( :last-child )
+, aside li:not( :last-child )
+  { margin-bottom : 0.5rem }
+
+hr{ border : none
+  ; margin-top : 0.5rem
+  }
+
+article
+  { min-width: 17rem }
+</style>
+
+
+
+<main>
+
+<header>
+  <h1>title</h1>
+</header>
+
+<nav>
+  <a href='#featured'>featured</a>
+  <a href='#recent'>recent</a>
+  <a href='#tags'>tags</a>
+</nav>
+
+<aside>
+  <a class='current' href='#about'>about</a>
+</aside>
+
+<aside>
+  <li>First Last</li>
+  <li>Location</li>
+  <hr>
+  <li>Description oenfp woep woefpwonepfownpeqn qpwn qpiwnpqiwndiqn pqiwn qp</li>
+  <hr>
+  <a href='#chat'>chat</a>
+  <a href='#email'>email</a>
+</aside>
+
+<article>
+  <img src='avatar.png'>
+</article>
+
+<aside>
+  <a href='#link'>link 1</a>
+  <a href='#link'>link 2</a>
+  <a href='#link'>link 3</a>
+  <hr>
+  <a href='#link'>link 4</a>
+  <a href='#link'>link 5</a>
+  <a href='#link'>link 6</a>
+</aside>
+
+</main>
